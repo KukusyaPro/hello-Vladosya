@@ -1,101 +1,119 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Hello, Vladosya</title>
-  <link rel="stylesheet type="text/css" href="style.css">
-  <body link="pink" vlink="#cecece" alink="#ff0000">
-  	<header align="center">
-		<div class="navbar">
-                <div><a href="test">about me</a></div>
-                <div><a href="test">about food</a></div>
-                <div><a href="test">travellings</a></div>
-                <div><a href="test">my Zucker</a></div>
-                <div><a href="test">contact me</a></div>
-     	</div>
-	</header>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello, Vladosya</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+     <!--little error(" missed)-->
+    </head>
+ <!--head tag has to be closed-->
+    <body>
+        <header>
+            <nav>
+                <!--tag <nav> used instead of div.navbar-->
+                <a class="nav-item" href=#>about me</a>
+                <a class="nav-item" href=#>about food</a>
+                <a class="nav-item" href=#>travellings</a>
+                <a class="nav-item" href=#>my Zucker</a>
+                <a class="nav-item" href=#>contact me</a>
+                <!-- replaced divs with class for <a> -->
+            </nav>
+        </header>
 
-<div class="one">
-	<div class="quest1"><h1 align="center"> Who am I? </h1></div>
-		<div><img src="/Users/svetlanavlasenko/Desktop/Новая папка/UNADJUSTEDNONRAW_thumb_2a8.jpg" class="photo1" align="center"></div>
-<div class="text1">
-	<p>happy traveller 
-		<br>successful businesslady
-		<br>Zucker-owner
-		<br>best communicator
-	</p></div>
-</div>
-<h1 class="quest2">How can I be useful?</h1>
-<div class="two">
-	<div class="card1">
-		<div class="wrap">
-		<div class="card">
-			<div class="front"> <img src="/Users/svetlanavlasenko/Desktop/Новая папка/7.jpg"></div>
-			<div class="back"> <span> Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. </span></div>
-		</div>	
-		</div>
-	</div>
-	<div class="card2">
-		<div class="wrap">
-		<div class="card">
-			<div class="front"> <span>Front</span></div>
-			<div class="back"> <span>Back</span></div>
-		</div>	
-		</div>
-	</div>
-	<div class="card3">
-		<div class="wrap">
-		<div class="card">
-			<div class="front"> <span>Front</span></div>
-			<div class="back"> <span>Back</span></div>
-		</div>	
-		</div>
-	</div>
-</div>
-<h2>Here I will write something interesting</h2>
-<div class="three"> 
-	<p class="stylish"> OH MY GOD! SO STYLISH!</p> 
-<div>
-	<div><img src="UNADJUSTEDNONRAW_thumb_2a8.jpg" alt="photo ne zagruzilos" width="300" height="400"></div>
-	<div> <img src="/Users/svetlanavlasenko/Desktop/Новая папка/1.jpg" alt="photo ne zagruzilos" width="300" height="400"> </div>
-	<div> <img src="/Users/svetlanavlasenko/Desktop/Новая папка/2.jpg" alt="photo ne zagruzilos" width="300" height="400"> </div>
-</div>
-</div>
-	<div >
-		<form action="/example/">
-    <button type="submit" formaction="#bottom">TAP HERE & NOTHING WILL HAPPEN</button>
-		</form>
-	</td>
-</TR>
-</table>
-<p style="margin-left: 40%"> 
+            <!-- moved <h1> in div.about-me-container -->
+        <div class="about-me-container">
+            <!-- changed class name (previously "one") -->
+            <h1 class="quest1"> Who am I? </h1>
+            <!-- deleted div.quest1, deleted css in <h1>. Btw quest1 class is missing in style.css -->
+            <img src="img/UNADJUSTEDNONRAW_thumb_2a8.jpg" class="photo1" align="center">
+            <!-- div deleted -->
+            <ul class="text1">
+                <li>happy traveller</li>
+                <li>successful businesslady</li>
+                <li>Zucker-owner</li>
+                <li>best communicator</li>
+            </ul>
+        </div>
+            <!-- replaced div with <ul> and rest with <li> -->
 
-<img src="/Users/svetlanavlasenko/Desktop/Новая папка/6.jpg" height="400" class="taz">
-		<p>but i still <strike> don't </strike> know what</p>
-<aside>
-	that's something aside
-<p class="art">My <span class="zacherk">articles</span> masterpieces</p>
-</aside>
-<table>
-		<tr>
-			<td>Why Lottochka doesn't fly?</td>
-			<td rowspan="3" width="50%"> 
-				<br> The latest article
-				<br class="things">8 IMPORTANT THINGS FOR BUSINESSLADY
-				<br><img src="/Users/svetlanavlasenko/Desktop/Новая папка/4.jpg" width="50%">
-			</td>
-		</tr>
-		<tr>
-			<td> How to become a Kukusya</td>
-		</tr>
-		<tr>
-			<td>Pretty coffee-shops in Kiev</td>
-		</tr>
-</table>
-<footer>
-	<a name="bottom"></a>
-	and this one is called FOOTER
-</footer>
-	</body>
+            <!-- moved <h1> into div.cards-container -->
+        <div class="cards-container">
+            <!-- replaced class "two" with "cards-container" -->
+            <h1 class="quest2">How can I be useful?</h1>
+                <!-- deleted all wrappers and fixed one line divs-->
+                <!-- made cards-wrapper-->
+            <div class="cards-wrapper">
+                <div class="card">
+                    <div class="front">
+                        <img src="img/7.jpg">
+                    </div>
+                    <div class="back">
+                        <span> Lorem Ipsum </span>
+                        <!-- shortened Lorem -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <span>Front</span>
+                    </div>
+                    <div class="back">
+                        <span>Back</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <span>Front</span>
+                    </div>
+                    <div class="back">
+                        <span>Back</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- moved <h2> into div.stylish-container -->
+
+        <div class="stylish-container">
+            <h2>Here I will write something interesting</h2>
+            <p class="stylish"> OH MY GOD! SO STYLISH!</p>
+            <div class="img-wrapper">
+                <img src="img/UNADJUSTEDNONRAW_thumb_2a8.jpg" alt="My photo">
+                <img src="img/1.jpg" alt="Zootopia">
+                <img src="img/2.jpg" alt="My photo">
+            </div>
+                <!-- deleted div which was container -->
+                <!-- deleted css -->
+                <!-- changed alt -->
+                <!-- deleted divs for img -->
+                <!-- added div.img-wrapper -->
+                <!-- corrected tabs for <button> -->
+                <!-- deleted form's div -->
+                <!-- deleted table tags and <p> -->
+                <!-- deleted form -->
+            <!--<img src="img/6.jpg" class="bowl">-->
+            <!-- don't know if bowl needed -->
+            <!-- replaced "taz" with "bowl" -->
+            <p>but i still <strike> don't </strike> know what</p>
+        <!-- deleted <aside> -->
+        </div>
+
+        <div class="articles-container">
+            <ul>
+                <h2>My <strike>mastepices</strike> articles</h2>
+                <li>Why Lottochka doesn't fly?</li>
+                <li>How to become a Kukusya?</li>
+                <li>Pretty coffee-shops in Kiev</li>
+            </ul>
+            <div class="last-article">
+                <h2>8 IMPORTANT THINGS FOR BUSINESSLADY</h2>
+                <img src="img/4.jpg">
+            </div>
+        </div>
+
+            <!-- completely rebuilt table structure -->
+        <footer>
+            <!-- deleted <footer> content -->
+        </footer>
+    </body>
 
 
