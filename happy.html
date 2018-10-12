@@ -4,29 +4,29 @@
         <meta charset="utf-8">
         <title>Hello, Vladosya</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-     <!--little error(" missed)-->
+        <link href="https://fonts.googleapis.com/css?family=Khula|Mukta+Malar:400,700,800" rel="stylesheet">
     </head>
- <!--head tag has to be closed-->
     <body>
+    <aside class="left-aside"></aside>
+    <!-- aside.left-aside added -->
+    <div class="body-wrapper">
+        <!-- added div.body-wrapper -->
         <header>
+            <div class="logo"></div>
+            <!-- added div.logo -->
             <nav>
-                <!--tag <nav> used instead of div.navbar-->
-                <a class="nav-item" href=#>about me</a>
-                <a class="nav-item" href=#>about food</a>
-                <a class="nav-item" href=#>travellings</a>
-                <a class="nav-item" href=#>my Zucker</a>
+                <a class="nav-item" href=#>about me</a><span class="divider">|</span>
+                <a class="nav-item" href=#>about food</a><span class="divider">|</span>
+                <a class="nav-item" href=#>travellings</a><span class="divider">|</span>
+                <a class="nav-item" href=#>my Zucker</a><span class="divider">|</span>
                 <a class="nav-item" href=#>contact me</a>
-                <!-- replaced divs with class for <a> -->
+                <!-- added dividers -->
             </nav>
         </header>
 
-            <!-- moved <h1> in div.about-me-container -->
         <div class="about-me-container">
-            <!-- changed class name (previously "one") -->
             <h1 class="quest1"> Who am I? </h1>
-            <!-- deleted div.quest1, deleted css in <h1>. Btw quest1 class is missing in style.css -->
             <img src="img/UNADJUSTEDNONRAW_thumb_2a8.jpg" class="photo1" align="center">
-            <!-- div deleted -->
             <ul class="text1">
                 <li>happy traveller</li>
                 <li>successful businesslady</li>
@@ -34,14 +34,9 @@
                 <li>best communicator</li>
             </ul>
         </div>
-            <!-- replaced div with <ul> and rest with <li> -->
 
-            <!-- moved <h1> into div.cards-container -->
         <div class="cards-container">
-            <!-- replaced class "two" with "cards-container" -->
             <h1 class="quest2">How can I be useful?</h1>
-                <!-- deleted all wrappers and fixed one line divs-->
-                <!-- made cards-wrapper-->
             <div class="cards-wrapper">
                 <div class="card">
                     <div class="front">
@@ -49,7 +44,6 @@
                     </div>
                     <div class="back">
                         <span> Lorem Ipsum </span>
-                        <!-- shortened Lorem -->
                     </div>
                 </div>
                 <div class="card">
@@ -70,8 +64,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- moved <h2> into div.stylish-container -->
 
         <div class="stylish-container">
             <h2>Here I will write something interesting</h2>
@@ -81,20 +73,8 @@
                 <img src="img/1.jpg" alt="Zootopia">
                 <img src="img/2.jpg" alt="My photo">
             </div>
-                <!-- deleted div which was container -->
-                <!-- deleted css -->
-                <!-- changed alt -->
-                <!-- deleted divs for img -->
-                <!-- added div.img-wrapper -->
-                <!-- corrected tabs for <button> -->
-                <!-- deleted form's div -->
-                <!-- deleted table tags and <p> -->
-                <!-- deleted form -->
-            <!--<img src="img/6.jpg" class="bowl">-->
-            <!-- don't know if bowl needed -->
-            <!-- replaced "taz" with "bowl" -->
+
             <p>but i still <strike> don't </strike> know what</p>
-        <!-- deleted <aside> -->
         </div>
 
         <div class="articles-container">
@@ -109,11 +89,12 @@
                 <img src="img/4.jpg">
             </div>
         </div>
-
-            <!-- completely rebuilt table structure -->
         <footer>
-            <!-- deleted <footer> content -->
         </footer>
+    </div>
+
+    <aside class="aside-right"></aside>
+    <!-- aside.aside-right added -->
     </body>
 
 
