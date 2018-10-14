@@ -18,7 +18,6 @@ body {
     display: flex;
     justify-content: space-between;
     font-family: 'Khula', sans-serif;
-    /*font-family: 'Mukta Malar', sans-serif;*/
 }
 
 header {
@@ -31,14 +30,16 @@ header {
     top: 0;
     left: 0;
     border-bottom: 1px solid #a6aa9c;
+    z-index: 9999;
 }
 
 .logo {
     width: 30%;
-    height: 12vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     padding-left: 2vw;
+    padding-top: 0.5vh;
     font-weight: 300;
     font-size: 44px;
     letter-spacing: 2px;
@@ -49,7 +50,6 @@ nav {
     width: 50%;
     display: flex;
     justify-content: space-between;
-    line-height: 6vh;
     align-items: center;
     font-size: 16px;
     text-transform: uppercase;
@@ -70,16 +70,20 @@ nav > a:hover {
 }
 
 .about-me-container {
-    margin-top: 6vh;
+    height: 90vh;
+}
+
+.about-me-container > .content-wrapper {
+    margin-top: 10vh;
     margin-left: -10vw;
     margin-right: -10vw;
-    height: 100vh;
     width: 100vw;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
 }
 
-.about-me-container > .quest1 {
+.about-me-container > .content-wrapper > .quest1 {
     opacity: 0.65;
     width: 30%;
     margin-right: -20vh;
@@ -89,15 +93,16 @@ nav > a:hover {
     text-align: center;
     font-size: 65px;
     font-weight: 800;
+    z-index: 1;
 }
 
-.about-me-container > img {
+.about-me-container > .content-wrapper > img {
     width: 26vw;
     height: 33vw;
     margin: auto;
 }
 
-.about-me-container > ul {
+.about-me-container > .content-wrapper > ul {
     display: block;
     width: 33%;
     vertical-align: middle;
@@ -105,7 +110,7 @@ nav > a:hover {
     list-style: none;
 }
 
-.about-me-container > ul > li {
+.about-me-container > .content-wrapper > ul > li {
     font-size: 18px;
     text-transform: uppercase;
     padding-left: 7vw;
@@ -115,11 +120,31 @@ nav > a:hover {
 
 }
 
-.about-me-container > ul > li > img {
+.about-me-container > .content-wrapper > ul > li > img {
     fill: red;
     padding-right: 2vw;
     width: 3vw;
     height: 3vw;
+}
+
+.about-me-container > .arrow-wrapper {
+    border-radius: 100px;
+    background-color: #e6e7e5;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 20vh;
+    margin: 0 auto;
+}
+
+.about-me-container > .arrow-wrapper > a > .arrow {
+    opacity: 0.7;
+    padding-left: 5vh;
+    width: 3vw;
+    height: 3vw;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
 }
 
 .cards-container {
@@ -127,7 +152,7 @@ nav > a:hover {
     margin-right: -10vw;
     background-color: #e6e7e5;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 
 }
 
@@ -226,4 +251,48 @@ nav > a:hover {
     max-width: 10vw;
     max-height: 10vh;
     object-fit: cover;
+}
+
+.card {
+    width:300px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;
+    border-radius: 10px;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.front img{
+    background-color: #fff;
+    width: 100%;
+    border-radius: inherit;
+}
+.front {
+    background-color: #fff;
+}
+.back {
+    background-color: #bdbdbd;
+    transform: rotateY(180deg);
+    color: white;
+    font-size: 19px;
+    border-radius: 10px;
+}
+
+.card:hover .front  {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotate(360deg);
 }
