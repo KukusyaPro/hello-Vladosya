@@ -139,12 +139,17 @@ nav > a:hover {
 
 .about-me-container > .arrow-wrapper > a > .arrow {
     opacity: 0.7;
-    padding-left: 5vh;
+    padding-left: 6vh;
     width: 3vw;
     height: 3vw;
     transform: rotate(90deg);
     display: flex;
     justify-content: center;
+}
+
+#arrow {
+    position: absolute;
+    top: 90vh;
 }
 
 .cards-container {
@@ -153,7 +158,6 @@ nav > a:hover {
     background-color: #e6e7e5;
     width: 100vw;
     height: 90vh;
-
 }
 
 .cards-container > .quest2 {
