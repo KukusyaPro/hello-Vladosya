@@ -237,24 +237,29 @@ nav > a:hover {
     margin-left: -10vw;
     margin-right: -10vw;
     background-color: #f7d3ba;
-    height: 100vh;
+    height: 83vh;
     width: 100vw;
 }
 
-.stylish-container > h2 {
-    padding-left: 3vw;
-    font-size: 5vh;
-    padding-bottom: 3vh;
+.stylish-container > p {
+    margin: 0 auto;
+    height: 10vh;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
-.stylish-container > .stylish {
-    font-style: italic;
+.stylish-container > p > .stylish {
+    font-weight: 300;
+    background-color: #000;
+    color: #fff;
     font-size: 7vh;
     text-align: center;
-    height: 15vh;
-    line-height: 15vh;
+    height: 7vh;
+    line-height: 9vh;
     vertical-align: middle;
 }
+
 
 .stylish-container > .img-wrapper {
     width: 100%;
@@ -272,30 +277,46 @@ nav > a:hover {
 
 }
 
-.articles-container {
-    margin-right: -10vw;
-    margin-left: -10vw;
+footer {
+    width: 100vw;
     background-color: #a6aa9c;
-    height: 50vh;
-    display: flex;
+    height: 7vh;
+    margin-left: -10vw;
 }
 
-.articles-container > ul {
-    list-style: none;
-    padding-left: 4vh;
-    display: block;
-    width: 50vw;
-    height: 50vh;
+footer > .logo {
+    width: 90vw;
+    font-size: 25px;
+    height: 7vh;
+    padding: 0;
+    line-height: 6vh;
+    vertical-align: center;
+    justify-content: flex-end;
 }
 
-.articles-container > .last-article {
-    width: 50vw;
-}
+/*.articles-container {*/
+    /*margin-right: -10vw;*/
+    /*margin-left: -10vw;*/
+    /*background-color: #a6aa9c;*/
+    /*height: 50vh;*/
+    /*display: flex;*/
+/*}*/
 
-.articles-container > .last-article > img {
-    padding-top: 4vh;
-    max-width: 10vw;
-    max-height: 10vh;
-    object-fit: cover;
-}
+/*.articles-container > ul {*/
+    /*list-style: none;*/
+    /*padding-left: 4vh;*/
+    /*display: block;*/
+    /*width: 50vw;*/
+    /*height: 50vh;*/
+/*}*/
 
+/*.articles-container > .last-article {*/
+    /*width: 50vw;*/
+/*}*/
+
+/*.articles-container > .last-article > img {*/
+    /*padding-top: 4vh;*/
+    /*max-width: 10vw;*/
+    /*max-height: 10vh;*/
+    /*object-fit: cover;*/
+/*}*/
